@@ -13,7 +13,7 @@ namespace DataTime
         public string Title { get; set; }
         public string Content { get; set; }
         public DateTime ShareData { get; set; }
-        public int SharedSecond { get; set; }
+       
         public TimeSpan timer => DateTime.Now - ShareData;
 
         public Status(string title, string content)
