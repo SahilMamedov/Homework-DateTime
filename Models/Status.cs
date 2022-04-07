@@ -14,29 +14,26 @@ namespace DataTime
         public string Content { get; set; }
         public DateTime ShareData { get; set; }
         public int SharedSecond { get; set; }
-
+        public TimeSpan timer => DateTime.Now - ShareData;
 
         public Status(string title, string content)
         {
             Title = title;
             Content = content;
             ID++;
-           Id = ID;
-            
-            
-            DateTime dateTime = DateTime.Now;
-            ShareData = dateTime;
-           int  second = DateTime.Now.Second;
-            SharedSecond = second;
-            
+            Id = ID;
+  
+            ShareData = DateTime.Now;
+           
         }
         public void GetStatusInfo()
         {
             Console.WriteLine($"ID: {Id} \n" +
                 $"Title: {Title} \n" +
-                $"Content: {Content} \n" +
-                $"SahredSecond: {SharedSecond}");
-            Console.WriteLine();
+                $"Content: {Content} \n");
+            Console.WriteLine("SharedSecound {0:hh\\:mm\\:ss}",timer);
+            // Saniyeden millisecondu cixmaq uchun arashdirma    https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-timespan-format-strings?redirectedfrom=MSDN
+
         }
 
 

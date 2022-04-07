@@ -6,32 +6,7 @@ namespace DataTime
     {
         static void Main(string[] args)
         {
-            //    Status status = new Status("bashliq", "nemaa");
-            //    Status status1 = new Status("bashlsdfsiq", "sdfsdfddf");
-            //    Status status2 = new Status("qwewr", "dfdf");
-            //    Status status3 = new Status("werwr", "df");
-            //    Status status4 = new Status("qqqqqqqqq", "ddd");
-            //    Status status5 = new Status("aaaaaaaaa", "sdddddddd");
-            //    Status status6 = new Status("sdfs", "nemsdfsdfaa");
-
-            //    User user = new User("asdasd");
-            //    User user1 = new User("gfgfggfgffg");
-            //    User user2 = new User("vvvvvvvv");
-
-            //    user.ShareStatus(status);
-            //    user.ShareStatus(status5);
-            //    // user.GetStatusById(1);
-            //    // user.ShareStatus(status6);
-            //    //  user.ShareStatus(status2);
-            //    //user.ShareStatus(status3);
-            //    user.ShareStatus(status4);
-            //    // user.GetAllStatus();
-            //    string name = "0.04.2022";
-            //    DateTime data = DateTime.Parse(name);
-            //    user.FilterStatusByDate(1, data);
-
-            //    //    status.GetStatusInfo();
-            //    //    user.GetAllStatus();
+            
 
 
             Console.WriteLine("UserName daxil edin");
