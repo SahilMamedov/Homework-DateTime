@@ -22,21 +22,18 @@ namespace DataTime
             Console.WriteLine($"ID:{status.Id} status elave olundu ");
             Console.WriteLine();
         }
-        public Status GetStatusById(int? id)
+        public void GetStatusById(int? id)
         {
-            foreach (Status status in Statuses)
+            
+            Status status = Statuses.Find(item => item.Id == id);
+
+           
+             if (id == null)
             {
-                if (status.Id == id)
-                {
-                    status.GetStatusInfo();
-                    return status;
-                }
-                else if (id == null)
-                {
-                    throw new NullReferenceException("ID-ni bosh gondermisiz");
-                }
+                throw new NullReferenceException("ID-ni bosh gondermisiz");
             }
-            return null;
+           
+            status.GetStatusInfo();
         }
 
         public void GetAllStatuses()
@@ -77,9 +74,9 @@ namespace DataTime
 
                 }
 
-                
+
             }
-            else if(id != _id)
+            else if (id != _id)
             {
                 Console.WriteLine("Bele ID-li user movcut deyil");
             }
@@ -88,7 +85,7 @@ namespace DataTime
             {
                 throw new NullReferenceException("ID-ni bosh gondermisiz");
             }
-            
+
 
 
 
